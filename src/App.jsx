@@ -3,19 +3,25 @@ import './App.css'
 import { data } from './data/data'
 import { useState } from 'react';
 
-export default function App() {
-  const [isDark, setIsDark] = useState(false);
+const stored = JSON.parse(localStorage.data || '{}');
 
-  const toggleTheme = () => {
-    document.body.classList.toggle('dark');
-    setIsDark(!isDark);
-  };
+export default function App() {
+  const [theme, setTheme] = useState(stored.theme || 'light');
+  document.body.className = theme;
+
+  function toggleTheme() {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    document.body.className = newTheme;
+
+    localStorage.data = JSON.stringify({ theme: newTheme, });
+  }
 
   return (
     <>
       <div className="topBar">
-        <button className="themeToggle" onClick={toggleTheme}>
-          {isDark ? '☀️ Light Mode' : '🌙 Dark Mode'}
+        <button className='theme-toggle' onClick={toggleTheme}>
+          {theme === 'light' ? 'Dark Moda Geç' : 'Light Moda Geç'}
         </button>
       </div>
       <Cart data={data}></Cart>

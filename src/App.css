@@ -100,7 +100,7 @@ body.dark .flag img {
   padding: 1rem 2rem 0;
 }
 
-.themeToggle {
+.theme-toggle {
   background-color: #222;
   color: #fff;
   padding: 0.6rem 1.2rem;
@@ -111,16 +111,16 @@ body.dark .flag img {
   transition: background-color 0.3s, transform 0.2s;
 }
 
-.themeToggle:hover {
+.theme-toggle:hover {
   background-color: #444;
   transform: scale(1.05);
 }
 
-body.dark .themeToggle {
+body.dark .theme-toggle {
   background-color: #eee;
   color: #111;
 }
 
-body.dark .themeToggle:hover {
+body.dark .theme-toggle:hover {
   background-color: #ddd;
 }
