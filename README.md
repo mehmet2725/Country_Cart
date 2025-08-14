@@ -15,9 +15,6 @@ Her ülke için **nüfus**, **bölge**, **başkent** ve **bayrak** bilgileri gö
 
 ---
 
-## 🖼️ Ekran Görüntüsü
-
-![Country Cart Screenshot](./screenshot.png)
 
 ---
 
@@ -25,7 +22,7 @@ Her ülke için **nüfus**, **bölge**, **başkent** ve **bayrak** bilgileri gö
 
 - **React.js** – UI bileşen yapısı  
 - **REST Countries API** – Ülke verilerinin sağlandığı API  
-- **CSS / Tailwind / Bootstrap** (hangi stil sistemi kullanıldıysa) – Stil tasarımı  
+- **CSS / Bootstrap – Stil tasarımı  
 - **JavaScript (ES6+)** – Mantık ve veri işleme
 
 ---
